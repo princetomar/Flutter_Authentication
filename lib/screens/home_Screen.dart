@@ -67,20 +67,7 @@ class _HomeScreenState extends State<HomeScreen> {
         body: Container(
       child: Column(
         children: [
-          // CircleAvatar(
-          //   backgroundImage: NetworkImage("${sp.imageUrl}"),
-          //   radius: 50,
-          // ),
-          // SizedBox(
-          //   height: size.height * 0.05,
-          // ),
-          // Text(
-          //   sp.name!,
-          //   style: TextStyle(fontSize: 24),
-          // ),
-          // SizedBox(
-          //   height: size.height * 0.05,
-          // ),
+         
           isDataLoaded == false
               ? Center(child: CircularProgressIndicator())
               // ignore: unnecessary_null_comparison
@@ -96,17 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         buildUserContentSection(name, email, provider),
                       ],
                     )
-                  // Column(
-                  //             mainAxisAlignment: MainAxisAlignment.center,
-                  //             children: [
-                  //               Text(
-                  //               userDetails!.results![0].name!.first!.toString() +
-                  //                   " " +
-                  //                   userDetails!.results![0].name!.title!.toString() +
-                  //                   " " +
-                  //                   userDetails!.results![0].name!.last!.toString())
-                  //             ],
-                  //           )
+                 
                   : Text("Failed to fetched Data"),
           Center(
             child: ElevatedButton(
